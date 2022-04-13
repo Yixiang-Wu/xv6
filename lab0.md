@@ -86,7 +86,7 @@ int pipe(int p[])
 //p[1]存放文件描述符，被进程用于write
 //返回0，没啥用
 
-//若read找不到可用data（read需要n个字符，而管道里只有k<n个)，那么read会一直等待，直到所有p[1]都被close。这也就是read端，需要提前close(p[1])的原因
+//若read找不到可用data（read需要n个字符，而管道里只有k<n个)，那么read会阻塞，直到所有p[1]都被close。这也就是read端，需要提前close(p[1])的原因
 
 //shell中可以如下语句：
 //echo hello world | wc
