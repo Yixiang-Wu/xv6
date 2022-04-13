@@ -52,8 +52,8 @@ int exec(char *file, char *argv[])
 ```c
 int read(int fd, char  buf[], int n)
 //fd是文件描述符,从fd读到buf,最多n个字符.注意fd==0是标准输入.返回具体读了多少个字符.
-//若fd==0,读到换行就结束
-//只是读，不做添加（不在最后添加一个结束符）
+//若fd==0,读到换行就结束，一般多一个换行符，如果不想要这个换行符，ctrl+D = EOF
+//只是读，不做添加（不在最后添加一个结束符，结束 != 换行）
 ```
 6. write
 ```c
@@ -127,3 +127,4 @@ unlink("haha.txt");
 
 12. echo
 - echo 会打多一个换行
+
