@@ -10,7 +10,7 @@
     3. 到xv6目录下，make qemu
 
 - xv6操作
-    - 列出进程 ctrl+p
+    - 列出进程 ctrl+p（在vscode中用不了）
     - 退出(ctrl+A) + X
     - ctrl+D是结束符号
 
