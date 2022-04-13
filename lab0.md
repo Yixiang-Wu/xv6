@@ -104,7 +104,7 @@ int pipe(int p[])
 10. 文件系统相关的系统调用
 
 ```c
-open(char * file, int flags)  // flags在 kernel/fcntl.h
+open(char * file, int flags)  // flags在 kernel/fcntl.h，返回int fd， fd会带一个偏移量，在该程序中，这个偏移量会自动增加
 chdir(char *)
 mkdir(char *)
 int fstat(int fd, struct stat *) //inode ,stat的定义在 kerenl/stat.h
