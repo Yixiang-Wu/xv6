@@ -37,8 +37,8 @@ void exit(int status)
 ```c
 int wait(int * xstatus)
 //如果执行wait的是父进程,那么等待一个子进程退出，将退出状态放入*xstatus，返回子进程的PID
-//如果不关心子进程状态,那么可以使用wait(0)
-//如果执行wait的是子进程,那么立即返回-1
+//如果不关心子进程状态,那么可以使用wait((int*)0)
+//如果执行wait的进程没有子进程,那么立即返回-1
 ```
 4. exec
 ```c
