@@ -134,4 +134,6 @@ unlink("haha.txt");
     1. type放在kernel/types.h, syscall和stdio.h放在user/user.h
     2. 学习输入参数，使用sleep系统调用
     3. 写好.c放在user目录下，在makefile中添加sleep，make qemu自己测试，./grade-lab-util sleep 分数测试
-2. 
+2. pingpong应用
+    1. 定义两个管道
+    2. 记得close(p[1])（对于自己不用的，在开头就close；对于自己要用的，用完记得close）
