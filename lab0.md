@@ -112,9 +112,9 @@ int stat(char * file, struct stat *)
 int link(char * file1, char * file2) //为file1创建一个新名字
 int unlink(char * file)
 //只有删除所有的link，最后才能删除inode
-int mknod //这个不太了解
+int mknod //设备
 
-//下面这种做法，会创建一个临时inode，进程退出或者关闭fd时删除inode
+//下面这种做法，会创建一个临时inode，1.进程退出 或者2.关闭fd 时删除inode
 fd = open("haha.txt", O_CREATE | O_RDWR);
 unlink("haha.txt");
 
