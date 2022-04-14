@@ -130,3 +130,8 @@ unlink("haha.txt");
 - echo 会打多一个换行
 --------------
 ### 实验
+1. sleep应用
+    1. type放在kernel/types.h, syscall和stdio.h放在user/user.h
+    2. 学习输入参数，使用sleep系统调用
+    3. 写好.c放在user目录下，在makefile中添加sleep，make qemu自己测试，./grade-lab-util sleep 分数测试
+2. 
