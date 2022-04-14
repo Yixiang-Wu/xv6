@@ -1,3 +1,4 @@
+### 理论
 - 配置环境
     - 跟着下面的教程走
     - https://www.bilibili.com/video/BV11K4y127Qk?spm_id_from=333.1007.top_right_bar_window_history.content.click
@@ -127,4 +128,5 @@ unlink("haha.txt");
 
 12. echo
 - echo 会打多一个换行
-
+--------------
+### 实验
