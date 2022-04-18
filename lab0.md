@@ -140,4 +140,6 @@ unlink("haha.txt");
 3. primes应用
     1. 总结出recursion函数（看代码，说不清）
     2. 记得parent 需要 wait(0)
-
+4. find应用
+    1. stat,fstat区别
+    2. read一个目录时，放到dirent的东西，inum的意义
