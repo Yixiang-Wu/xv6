@@ -143,3 +143,4 @@ unlink("haha.txt");
 4. find应用
     1. stat,fstat区别
     2. read一个目录时，放到dirent的东西，inum的意义
+    3. memcmp, strcmp
